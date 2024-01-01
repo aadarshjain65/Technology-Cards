@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.technology-cards-container {
+  display: flex;
+  background-color: #f4faff;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.cards-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 48px;
+}
+
+.heading {
+  font-family: 'Roboto';
+  font-size: 48px;
+  font-weight: bold;
+  color: #171f46;
+  text-align: center;
+}
+
+.paragraph {
+  font-family: 'Roboto';
+  font-size: 18px;
+  color: #64748b;
+  text-align: center;
+}
+
+.cards-list-container {
+  width: 90%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-right: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .cards-list-container {
+    max-width: 1200px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+  }
+}
